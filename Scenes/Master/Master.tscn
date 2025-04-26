@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=3 uid="uid://5hhkw5v1r7xl"]
+
+[ext_resource type="Texture2D" uid="uid://bx3cgot1k7jnb" path="res://assets/images/backgroundEmpty.png" id="1_h6g34"]
+[ext_resource type="PackedScene" uid="uid://bt7kgl3k51njy" path="res://Scenes/Main/Main.tscn" id="2_o4rt4"]
+
+[node name="Master" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BackgroundImage" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_h6g34")
+expand_mode = 1
+
+[node name="Music" type="AudioStreamPlayer2D" parent="."]
+
+[node name="Main" parent="." instance=ExtResource("2_o4rt4")]
+layout_mode = 1
